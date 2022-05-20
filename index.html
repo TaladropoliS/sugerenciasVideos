@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos - Desafío</title>
+    <link rel="icon" href="assets/img/favicon/favicon.png">
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<video autoplay muted loop id="myVideo">
+    <source src="assets/img/backvideo.mp4" type="video/mp4">
+</video>
+
+<div class="container">
+    <div id="tituloPagina" class="text-center text-light mx-auto bg-transparent">
+        <img src="./assets/img/video.png" alt="video" class="img-fluid">
+        <div class="d-inline-block">
+            <h3 class="fw-bold my-5 ms-3">Sugerencias de Vídeos</h3>
+        </div>
+    </div>
+
+    <!--  Acordion Bootstrap 5  -->
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item bg-transparent">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button id="btnMusica" class="accordion-button collapsed btn btn-link text-start" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Música
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne"
+                 data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <div class="ratio ratio-16x9 mx-auto">
+                        <iframe id="musica" width="560" height="315" src=""
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item bg-transparent">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button id="btnPelicula" class="accordion-button collapsed btn btn-link text-start" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Película
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                 data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <div class="ratio ratio-16x9 mx-auto">
+                        <iframe id="pelicula" width="560" height="315" src=""
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item bg-transparent">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button id="btnSerie" class="accordion-button collapsed btn btn-link text-start" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Serie
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                 data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <div class="ratio ratio-16x9 mx-auto">
+                        <iframe id="serie" width="560" height="315" src=""
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/jquery/jquery-3.6.0.js"></script>
+<script src="assets/js/bootstrap/bootstrap.bundle.js"></script>
+<script type="module" src="assets/js/videoBackground.js"></script>
+<script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
